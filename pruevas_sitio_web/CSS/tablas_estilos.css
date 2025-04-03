@@ -1,0 +1,35 @@
+table {
+	background-color: #000066;
+	border: 1px black solid;
+	margin: 1ex;
+	padding: 1ex;
+	width: 45%;
+	text-align: center;
+}
+#tabla_posiciones{
+	width: 45%;
+}
+
+#tabla_combinadas{
+	width: 45%;
+}
+
+th, td {
+	height: 2em;
+
+}
+
+h1{
+	text-transform: capitalize;
+}
+	
+td ul{
+	justify-content: center;
+}
+th{
+	background-color: #006600;
+}
+td{
+	background-color: #00cc00;
+	
+}

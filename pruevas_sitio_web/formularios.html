@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="pagina formularios">
+<link rel="stylesheet" href="CSS/estilos_generales_sitio.css">
+<link rel="stylesheet" href="CSS/formulario_estilos.css">
+<title>formularios</title>
+</head>
+
+<body>
+	<header>
+	<h1>formularios</h1>
+	<nav>
+		<a href=""> ejemplo</a>
+	</nav>
+	</header>
+	<section>
+		<article>
+		<h2>formulario prueba</h2>
+		<form id="id_form1" name="nombre_formulario_php" action = "" method="POST">
+			<fieldset id="id_form1_camp_rel1"name= "campos_asociados_relacionados">
+			<legend>campos generales</legend>
+				<span class="par_label_input">
+					<label for="campo_texto">ingresa texto (text)</label>
+					<input type="text" name="campo_texto" maxlength="200">
+				</span>
+				<span class="par_label_input"> 
+					<label for="fecha_ingresada">ingresa fecha (date)</label>
+					<input type="date" name="fecha_ingresada" min="1900/12/28">
+				</span>
+				<span class="par_label_input"> 
+					<label for="hora_ingresada">ingresa hora (time)</label>
+					<input type="time" name="hora_ingresada">
+				</span>
+				
+				<span class="par_label_input">
+					<label for ="busqueda_pagina">busqueda (search)</label>
+					<input type="search" name="busqueda_pagina" maxlength="20" autocomplete="on">
+				</span>
+				
+				<span class="par_label_input">
+					<label>ingresa texto en el area de escritura (textarea)</label>
+					<input type="textarea" name="cuadro de area" cols="6" rows="8">
+				</span>
+			</fieldset>
+			
+			<fieldset id="id_form1_cam_rel2" name="campos_numericos">
+			<legend>campos numericos</legend>
+				<span class="par_label_input">
+					<label>seleccione un numero (range)</label>
+					<input type="range" name="rango_entero" step= "(0:100)" min="0" max="100">
+				</span> 
+				
+				<span class="par_label_input">
+					<label>ingrese un numero (nember)</label>
+					<input type="number" name="numero_entero" min="-10" max= "150">		
+				</span>
+			</fieldset>
+			
+			<fieldset id="id_form1_camp_rel3" name="campos_obligatorios">
+			<legend>campos obligatorios</legend>
+				<span class="par_label_input">
+					<input type="url" name="url_ingresada" maxlength="20" required placeholder="ingrese una URL (url)">
+				</span> 
+				
+				<span class="par_label_input">
+					<input type="password" name="contraseña" maxlength="20" required placeholder="ingrese una contraseña (password)">
+					<input name="contraseña_encriptada" type="hidden" value="">
+				</span> 
+				
+				<span class="par_label_input">
+					<label>ingresa correo electronico (email)</label>
+					<input type="email" name="correo_electronico" autocomplete="on" required>
+				</span> 
+ 
+			</fieldset>
+			
+			
+			<fieldset id="id_form1_camp_rel4" name="campos_opciones_multiples">
+			<legend>campos opciones multiples</legend>
+				<span class="par_label_input">
+					<label>seleccina solo una entre varias opciones</label>
+					<ul class="clase_opciones">
+						<li><label>opcion excluyente 1 (radio)</label><input id="id_opcion_excluyente1" name="iguales" type="radio" value="1"></li>
+						<li><label>opcion excluyente 2 (radio)</label><input id="id_opcion_excluyente2" name="iguales" type="radio" value="2"></li>
+					</ul>
+						
+						
+				</span>
+				
+				<span class="par_label_input">
+						<label>seleccina algunas entre varias opciones</label>
+						<ul class="clase_opciones">
+							<li><label>opcion1 (checkbox)</label><input id="opcion_incluyente1" name="opcion1" type="checkbox" value="1"></li>
+							<li><label>opcion2 (checkbox)</label><input id="opcion_incluyente2" name="opcion2" type="checkbox" value="1"></li>
+							<li><label>opcion3 (checkbox)</label><input id="opcion_incluyente3" name="opcion3" type="checkbox" value="1"></li>
+						</ul>
+				</span>
+				
+				<span class="par_label_input">
+						<label>seleccina el valor a enviar (select)</label>
+						<select id="id_selector_valores" name="una_en_desplegable" multiple size="3">
+							<option value="1" selected>opcion1 (option)</option>
+							<option value="2">opcion2 (option)</option>
+							<option value="3">opcion3 (option)</option>
+							<option value="4">opcion4 (option)</option>
+							<option value="5">opcion5 (option)</option>
+							<option value="6">opcion6 (option)</option>
+						</select>
+				</span>
+			</fieldset>
+			
+			
+			<fieldset id="id_form1_camp_rel5" name="campos_porcentajes">
+			<legend>campos porcentuales</legend>
+				<span class="par_label_input">
+						<label>establezca el porcentaje (0;10)</label>
+						<ul class="clase_opciones">
+							<li><label>valor 1 (meter)</label><meter high="8" low="3" min="0" max="10" optimum="5" value="1" > </meter> </li>
+							<li><label>valor 2 (meter)</label><meter high="8" low="3" min="0" max="10" optimum="5" value="3" > </meter></li>
+							<li><label>valor 3 (meter)</label><meter high="8" low="3" min="0" max="10" optimum="5" value="5" > </meter></li>
+							<li><label>valor 4 (meter)</label><meter high="8" low="3" min="0" max="10" optimum="5" value="7" > </meter></li>
+							<li><label>valor 5 (meter)</label><meter high="8" low="3" min="0" max="10" optimum="5" value="9" > </meter></li>
+						</ul>	
+				</span>
+				
+				<span class="par_label_input">
+						<label>visualizacion del progreso (progress)</label>
+						<progress value="10" max="50"></progress>
+				</span>
+			</fieldset>
+			
+			<fieldset id="id_form1_camp_rel6" name="archivos_externos">
+			<legend>archivos externos</legend>
+				<input type="file">
+			</fieldset>
+			
+			<fieldset id="id_form1_camp_rel7" name="botones">
+			<legend>funcionalidad</legend>
+				<span class="par_label_input"> <input type="submit" name="enviar" value="enviar" title="pulse para enviar"></span> 
+				
+				<span class="par_label_input"> <button type="reset">pulse para resetear (button)</button></span>
+				
+				<span class="par_label_input"><input type="button" name="funcionalidad" value="hacealgo" title="activar funcionalidad"></span> 
+				
+			</fieldset>
+			
+			
+			
+			
+		</form>
+		</article>
+		
+		<article>
+		<h2>formulario ejemplo: alta de usuario</h2>
+		<form id="formulario2" name="formulario ejemplo" method="GET" action="">
+			<fieldset class="id_form2">
+			<legend class="par_label_input">por favor complete este formulario: </legend>
+				<span>
+					<label> Ingrese su nombre:</label> <input type="text" name="nombre" maxlength="20" placeholder="maximo 20 caracteres">
+				</span>
+				
+				<span class="par_label_input">
+					<label>Ingrese su Apellido:</label> <input type="text" maxlength="20" placeholder="maximo 20 caracteres">
+				</span>
+				
+				<span>
+					<label>seleccione su sexo:</label>
+					<ul>
+						<li><label>Masculino</label><input id="id_masculino" type="radio" name="sexo" value="M"></li>
+						<li><label>Femenino</label><input id="id_femenino" type="radio" name="sexo" value="F"></li>
+					</ul>
+				</span>
+				
+				<span class="par_label_input">
+					<label>seleccione sus hobbies</label>
+					<select id="id_seleccion_hobbies" name="hobbies" multiple size="3" >
+						<option value="1">computacion</option>
+						<option value="2">Aviacion</option>
+						<option value="3">Futbol</option>
+					</select>
+				</span>
+				
+				<span class="par_label_input">
+					<label>indique su pais de residencia</label>
+					<select id="id_seleccion_residencia" name="residencia">
+						<option value="1" selected>Argentina</option>
+						<option value="2">Brasil</option>
+						<option value="3">Paraguay</option>
+						<option value="4">Chile</option>
+					</select>
+				</span>
+				
+				<span>
+					<input type="file" id="ingreso_imagen" name="foto" accept="image/*">
+				</span>
+				
+				<span class="par_label_input">
+					<button type="submit" id="id_enviar" value="enviar">enviar</button>
+					<button type="reset" id="id_borrar" value="borrar">borrar</button>
+				</span>
+			</fieldset>
+			
+			
+			
+		</form>
+		</article>
+	</section>
+	<footer>
+	</footer>
+	
+</body>
+
+<html>

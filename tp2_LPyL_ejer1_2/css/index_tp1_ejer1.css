@@ -1,0 +1,15 @@
+
+h1, h2{
+	text-transform:capitalize;
+}
+
+h1{
+	text-decoration: bold;
+	font-family: Verdana;
+	text-align: center;
+}
+
+img{
+	height: 70px;
+	width:auto;
+}

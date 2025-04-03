@@ -1,0 +1,28 @@
+form{
+	display:flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: flex-start;
+	width: 45%;
+	margin: 1ex;
+}
+
+fieldset{
+	display: flex;
+	flex-direction: column;
+}
+
+h2{
+	text-decoration:capitalize;
+}
+
+span{
+	margin:1em;
+}
+
+ul{
+	flex-direction:column;
+}
+#id_form1_camp_rel7{
+	flex-direction:row;
+}

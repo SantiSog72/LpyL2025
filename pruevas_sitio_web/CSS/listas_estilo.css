@@ -1,0 +1,25 @@
+li{
+	color: white;
+}
+ol {
+	list-style-type: decimal-leading-zero;
+	background-color: #34495E;
+}
+
+ul {
+	background-color: #FFEB3B;
+}
+ul li {
+	color: red;
+}
+
+dl {
+	background-color: #D1E8E2;
+}
+
+dt{
+	font-weight: bold;
+}
+dd{
+	font-style: italic;
+}

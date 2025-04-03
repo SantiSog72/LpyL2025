@@ -1,0 +1,29 @@
+body {
+	background-color: #F0F0F0;
+	font-family: Verdana, Arial, Helvetica;
+	color: #990000;	
+}
+th, td{
+	border: 1px solid black;
+	
+}
+table{
+	display:flex;
+	
+	
+}
+
+#caracteristicas, #imagenes{
+	display:flex;
+	flex-direction:column;
+}
+
+#caracteristicas td, #imagenes td{
+	
+}
+
+}
+#imagenes{
+	height:5px;
+	width: auto;
+}
