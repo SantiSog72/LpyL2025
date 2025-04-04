@@ -1,0 +1,16 @@
+ul{
+	margin:1ex;
+}
+li{
+	text-transform:capitalize;
+}
+
+.musica{
+	background-color: blue;
+}
+.peliculas {
+	background-color: red;
+}
+.perros{
+	background-color: green;
+}

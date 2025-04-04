@@ -1,0 +1,36 @@
+p{
+	border: 5px red solid;
+}
+
+article p:nth-of-type(2){
+	border: dotted;
+}
+
+article p:nth-of-type(3){
+	border: dashed;
+}
+
+
+article p:nth-of-type(4){
+	border: double;
+}
+
+
+article p:nth-of-type(5){
+	border:  groove;
+}
+
+
+article p:nth-of-type(6){
+	border: ridge;
+}
+
+
+article p:nth-of-type(7){
+	border:  inset;
+}
+
+
+article p:nth-of-type(8){
+	border: outset;
+}
