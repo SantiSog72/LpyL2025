@@ -1,11 +1,11 @@
-#100{
+.opacidad_100{
 	opacity: 1;
 }
 
-#50{
+.opacidad_50{
 	opacity: 0.5;
 }
 
-#25{
+.opacidad_25{
 	opacity: 0.25;
 }
