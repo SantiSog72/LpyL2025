@@ -3,34 +3,34 @@ p{
 }
 
 article p:nth-of-type(2){
-	border: dotted;
+	border: 5px red dotted;
 }
 
 article p:nth-of-type(3){
-	border: dashed;
+	border: 5px red dashed;
 }
 
 
 article p:nth-of-type(4){
-	border: double;
+	border: 5px red double;
 }
 
 
 article p:nth-of-type(5){
-	border:  groove;
+	border:  5px red groove;
 }
 
 
 article p:nth-of-type(6){
-	border: ridge;
+	border: 5px red ridge;
 }
 
 
 article p:nth-of-type(7){
-	border:  inset;
+	border:  5px red inset;
 }
 
 
 article p:nth-of-type(8){
-	border: outset;
+	border: 5px red outset;
 }
