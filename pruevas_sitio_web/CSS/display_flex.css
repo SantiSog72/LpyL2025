@@ -4,44 +4,53 @@ body {
 	color: #990000;
 	border: 1px solid black;
 	background-color: grey;
+	font-size: 15px;
+	
+	
+	max-height: 80vh;
+	max-width: 90vw;
+	min-height: 90vh;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;  
 }
+
 h1{
 	text-transform: uppercase;
 	font-weight: bold;
+	
 }
+
 
 .contenedor{
 	background-color: green;
-	padding: 3rem;
-	height: 75%;
-	border: 1px solid black
-}
-
-.item{
-	padding:1rem;
-	margin: 1rem;
-	border: 2px solid black;
-	background-color: red;
-}
-
-.subitem{
-	background-color: yellow;
+	border: 1px solid black;	
 	
-}
-
-
-.contenedor{
+	margin: 0 auto;
+	width: 90%;
+	max-width: 60%;
+	min-height: 80%;
+	
+	
 	display:flex;
+	flex-direction: row; 
+	justify-content: flex-start;
+	align-items: stretch; 
+	
+	flex-wrap:wrap;
+	
 	
 	/*
-	direccion en la que se distribuyen los hijos
+	direccion en la que se distribuyen los hijos, poner en columna o fila ayuda a ver 
+	como se posicionan los elementos en el eje vertical y orizontal
 	flex-direction: row;  
 	flex-direction: row-reverse; 
 	flex-direction: column;      
 	flex-direction: column-reverse;
 	
 	
-	posicion de los elementso dentro del eje horizonal
+	posicion de los elementso dentro del eje vertical
 	justify-content: flex-start;   
 	justify-content: center;       
 	justify-content: flex-end;     
@@ -49,37 +58,58 @@ h1{
 	justify-content: space-around; 
 	justify-content: space-evenly;  
 	
-	posicion de los elementso dentro del eje vertical
+	posicion de los elementso dentro del eje horizonal
   align-items: stretch;    
   align-items: flex-start; 
   align-items: center;     
   align-items: flex-end;   
   align-items: baseline;   
   
-  
+	para controlar el desbordamiento de contenedores
+	flex-wrap: nowrap;
+	flex-wrap: wrap;
+	las nuevas lineas se agregan arriba
+	flex-wrap: wrap-reverse;
+	
+	
+	para que el padding y el border se encuentren dentro del ancho total
+	box-sizing: border box;
+	
+	
+	se puede usar para centrar el contenido en un eje (dependiendo en donde se coloque el auto)
+	independientemente de como los alla alineado el padre.
+	margin: 0 auto
   */
-  
+	
+	
+	
+	
 }
 
 
-
 .item{
+	border: 1px solid black;
+	background-color: red;
+	
+	/*margin: 0 auto;*/
+	text-align: center;
+	width: fit-content;
+	height: fit-content;
+	flex: 0;
 	
 	/* crecimiento proporcional al resto de los hijos 
 	crece proporcionalmente respecto al resto de los elemtnos contenidos por el padre
 	flex:1; 
 	flex:2;   
 	
+	fit-content = tamaño del contenido puede ser tanto vertical como horizonal
 	*/
-}
-
-.subitem{
 }
 
 
 footer {
+	margin: 0px auto;
 	text-align: center;
-	padding: 20px;
 }
 
 #descripcion_pagina {
