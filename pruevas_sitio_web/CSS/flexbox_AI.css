@@ -1,0 +1,44 @@
+body {
+      font-family: sans-serif;
+      background: #f3f3f3;
+      padding: 2rem;
+    }
+
+    .titulo {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-top: 2rem;
+    }
+
+    .contenedor {
+      display: flex;
+
+      /* 👇 Cambiá estos valores para experimentar */
+      flex-direction: row;       /* row | column | row-reverse | column-reverse */
+      justify-content: center;   /* flex-start | center | flex-end | space-between | space-around | space-evenly */
+      align-items: center;       /* stretch | flex-start | center | flex-end | baseline */
+      flex-wrap: wrap;           /* nowrap | wrap | wrap-reverse */
+	  
+	  
+	  /*Cambiá flex-direction: column y mirá cómo se comportan justify-content y align-items.
+
+		Usá flex-wrap: wrap + flex-direction: row-reverse y mirá cómo se acomodan.
+
+		Probá align-items: stretch con o sin height en los .item.*/
+
+      gap: 1rem;
+      background-color: #ccc;
+      border: 2px dashed #666;
+      padding: 1rem;
+      min-height: 300px;
+    }
+
+    .item {
+      background-color: tomato;
+      color: white;
+      font-weight: bold;
+	  height: 1.5rem;
+      padding: 1.5rem;
+      flex: 0 1 100px;
+      text-align: center;
+    }
