@@ -3,36 +3,45 @@ body {
 	font-family: Verdana, Arial, Helvetica;
 	color: #990000;
 	font-size: 17px;
+	
 }
 
 article {
 	display:flex;
-	justify-content: center;
-	align-items:center;
-	
-	
-}
-.contenido{
-	font-family:Arial;
+	flex-wrap: wrap;
+	justify-content: space-evenly;  
 	
 }
 
+
 div{
-	margin: 2ex;
-	display:flex;
-	flex-wrap:wrap;
-	align-content:center;
+	max-width: 50%;
+}
+
+.contenido{	
+	font-family:Arial;
+	word-wrap: break-word;
+	white-space: normal;
+	
 	
 }
-a{
+
+
+.lista	{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.boton{
 	text-transform:uppercase;
-	background-color:#66CC33;
-	font-size: 2ex;
-	width:100%;
-	padding: 1em 2em;
-	margin:2em;
+	color:white;
+	background-color: blue;
+	font-size: 1.5rem;
 	border-radius:10px;
-	max-height:3em;
+	width:100%;
+	text-decoration: none;
+	text-align:center;
 }
 h2{
 	text-decoration:bold;
@@ -40,11 +49,15 @@ h2{
 }
 
 img{
-	height: 45%;
-	width: auto;
+	width:60%;
 }
 
 ul{
 	list-style-image: url("../archivos_externo/viñeta2.png");
-	
+	display:flex;
+	flex-direction:column;
+}
+li{
+	justify-content: space-arround;
+	margin: 12px 0px ;
 }
