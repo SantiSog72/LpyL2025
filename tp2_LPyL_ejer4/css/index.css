@@ -3,27 +3,46 @@ body {
 	font-family: Verdana, Arial, Helvetica;
 	color: #990000;	
 }
-th, td{
+
+
+table, table *{	
 	border: 1px solid black;
+	border-collapse: collapse;
+	box-sizing: border-box;
 	
 }
-table{
+
+table {
+	min-width: 100vw;
+	
+}
+
+
+td {
+
+
+}
+.imagenes{
+	float: right;
 	display:flex;
 	
+}
+
+
+.caracteristicas{
+	float: left;
+}
+
+
+.encabezado{
+	text-align: center;
+	flex-direction: row;
 	
 }
 
-#caracteristicas, #imagenes{
-	display:flex;
-	flex-direction:column;
-}
 
-#caracteristicas td, #imagenes td{
-	
-}
-
-}
-#imagenes{
-	height:5px;
-	width: auto;
+img{
+	max-height: 200px;
+	width:auto;
+	object-fit:cover;
 }
