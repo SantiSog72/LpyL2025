@@ -3,3 +3,35 @@ body {
 	font-family: Verdana, Arial, Helvetica;
 	color: #990000;
 }
+
+article{
+	display:flex;
+}
+.imagenes, .contenido{
+	width: 40%;
+	margin: 0px auto;
+	
+}
+.imagenes{
+	border: 1px dotted grey;
+}
+
+
+
+footer {
+	text-align: center;
+	padding: 20px;
+}
+
+#descripcion_pagina {
+	font-style: italic;
+	font-size: 14px;
+	color: #333;
+}
+.autor{
+	font-size: 1.3em;
+	text-transform: capitalize;
+}
+.tp_ejer{
+	font-weight:bold;
+}
