@@ -3,46 +3,27 @@ body {
 	font-family: Verdana, Arial, Helvetica;
 	color: #990000;	
 }
-
-
-table, table *{	
+th, td{
 	border: 1px solid black;
-	border-collapse: collapse;
-	box-sizing: border-box;
 	
 }
-
-table {
-	min-width: 100vw;
-	
-}
-
-
-td {
-
-
-}
-.imagenes{
-	float: right;
+table{
 	display:flex;
 	
-}
-
-
-.caracteristicas{
-	float: left;
-}
-
-
-.encabezado{
-	text-align: center;
-	flex-direction: row;
 	
 }
 
+#caracteristicas, #imagenes{
+	display:flex;
+	flex-direction:column;
+}
 
-img{
-	max-height: 200px;
-	width:auto;
-	object-fit:cover;
+#caracteristicas td, #imagenes td{
+	
+}
+
+}
+#imagenes{
+	height:5px;
+	width: auto;
 }
