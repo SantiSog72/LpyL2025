@@ -4,6 +4,37 @@ body {
 	color: #990000;
 }
 
+article{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	margin: 2rem;
+	box-sizing: border-box;
+}
+
+
+
+.contenido{
+	max-width: 70%;
+	
+}
+
+#img_oportunidad{
+	width: 100vw;
+	
+}
+
+#img_campo{
+	max-width: 30%;
+}
+
+
+
+
+
+
+
 footer {
 	text-align: center;
 	padding: 20px;
