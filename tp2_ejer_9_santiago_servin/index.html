@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="autor" content="Santiago Servin">
+<meta name="description" content="Ejercicio de Trabajo Practico">
+<link rel="stylesheet" href="css/index.css">
+<title>formulario 2</title>
+</head>
+
+<body>
+	<header>
+	<h1>catalogo de arte</h1>
+	</header>
+	<section>
+		<article>
+		<form id="id_formulario_arte" method="post" action="procesa.php">
+			<fieldset name="metodos_busqueda">
+				<span class="par_label_input">
+					<label class="label_principal" for="id_ingreso_titulo_obra">obra</label>
+					<input id="id_ingreso_titulo_obra" name="titulo_obra" type="text" maxlength="20" placeholder="max 20 caracteres">
+					<input id="id_autor_obra" name="autor_obra" type="text" maxlength="20" placeholder="max 20 caracteres">
+				</span>
+				
+				<span class="par_label_input">
+					<label class="label_principal" for="id_tipo_obra">tipo</label>
+					<ul id="id_tipo_obra">
+						<li><label for="escultura">escultura</label><input id="id_checkbox_escultura" name="escultura" type="checkbox" value="1"></li>
+						<li><label for ="arquitectura">arquitectura</label><input id="id_checkbox_arquitectura" name="arquitectura" type="checkbox" value="1"></li>
+						<li><label for ="pintura">pintura</label><input id="id_checkbox_pintura" name="pintura" type="checkbox" value="1"></li>
+					</ul>
+				</span>
+				
+				<span class="par_label_input">
+					<label class="label_principal" for="id_disponibilidad">disponibilidad</label>
+					<ul id= "id_disponibilidad">
+						<li><label>museo / acceso publico</label><input id="id_radio_acceso_publico" name="museo/acceso_publico" type="radio" value="1"></li>
+						<li><label>coleccion privada</label><input id="id_radio_coleccion_privada" name="coleccion_privada" type="radio" value="2"></li>						
+					</ul>				
+				</span>
+				
+				<span class="par_label_input">
+				<label class="label_principal" for="id_selector_estilos">estilo</label>
+				<!--para que sea seleccion multiple se debe colocar valores distintos en las opciones y colocar el atributo (multiple) en el select? (si, y hay que colocar corchetes 
+				en el nombre del select name="nombre_select[]")-->				
+				<select id="id_selector_estilos" size="1">
+					<option value="clasico">clasico</option>
+					<option value="contemporaneo">contemporaneo</option>
+					<option value="realismo">realismo</option>
+				</select>				
+				</span>
+								
+			</fieldset>
+			
+			<fieldset name="sujerencias">
+				<span class="par_label_input">
+					<label class="label_principal" for="">haganos saber sus sugerencias</label>
+					<!--rows y cols nuemero de filas y columnas visibles (indicado con cantidad de caracteres, siempre y cuando tenga el espacio para mostrarlo)-->
+					<input id="id_ingreso_sujerencias" name="sujerencias" type="textarea" maxlength="100" placeholder="Me gustaria indicar que.." cols="30" rows="4">
+				</span>
+			</fieldset>
+		
+		</form>
+		</article>
+	</section>
+	<footer>
+	<div id="descripcion_pagina">
+		<p>autor: <span class="autor">Santiago Servin</span></p>
+		<p>Trabajo Pr&aacute;ctico <span class="tp_ejer">2</span> , ejercicio <span class="tp_ejer">9</span>.</p>		
+	</div>
+	</footer>
+	
+</body>
+
+<html>

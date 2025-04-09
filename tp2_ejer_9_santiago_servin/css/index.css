@@ -1,0 +1,36 @@
+body {
+	background-color: #F0F0F0;
+	font-family: Verdana, Arial, Helvetica;
+	color: #990000;
+}
+
+#id_formulario_arte, .par_label_input{
+	display:flex;
+	flex-direction:column;
+	
+}
+
+fieldset{
+	display:flex;
+	flex-direction: rows;
+}
+
+
+
+footer {
+	text-align: center;
+	padding: 20px;
+}
+
+#descripcion_pagina {
+	font-style: italic;
+	font-size: 14px;
+	color: #333;
+}
+.autor{
+	font-size: 1.3em;
+	text-transform: capitalize;
+}
+.tp_ejer{
+	font-weight:bold;
+}
