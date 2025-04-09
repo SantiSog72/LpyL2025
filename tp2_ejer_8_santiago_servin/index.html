@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="autor" content="Santiago Servin">
+<meta name="description" content="Ejercicio de Trabajo Practico">
+<link rel="stylesheet" href="css/index.css">
+<title>formularios</title>
+</head>
+
+<body>
+	<header>
+	<h1>informacion</h1>
+	</header>
+	<section>
+		<article>
+		<form id="formulario_registro" method="get" action="mailto:nuevousuario@empresa.com.ar">
+		
+			<legend>si quieres recivir la mejor informacion registrese</legend>
+			<fieldset name="datos_personales">
+			<span class="par_label_input">
+				<label for ="nombre_ingresado">nombre:</label>
+				<input id="id_nombre_ingresado" name="nombre_ingresado" type="text" maxlength="20" placeholder="maximo 20 caracteres">							
+			</span>
+
+			<span class="par_label_input">
+				<label for ="primer_apellido_ingresado">primer apellido:</label>
+				<input id="id_primer_apellido_ingresado" name="primer_apellido_ingresado" type="text" maxlength="20" placeholder="maximo 20 caracteres">							
+			</span>
+
+			<span class="par_label_input">
+				<label for ="segundo_apellido_ingresado">segundo apellido:</label>
+				<input id="id_segundo_apellido_ingresado" name="segundo_apellido_ingresado" type="text" maxlength="20" placeholder="maximo 20 caracteres">							
+			</span>			
+			</fieldset>
+			
+			
+			<fieldset name="datos_ubicacion">
+			<span class="par_label_input">
+				<label for ="Domicilio_ingresado">Domicilio:</label>
+				<input id="id_Domicilio_ingresado"name="Domicilio_ingresado" type="text" maxlength="25" placeholder="maximo 25 caracteres">							
+			</span>
+			
+			<span class="par_label_input">
+				<label for ="codigo_postal">codigo postal:</label>
+				<input id="id_codigo_postal" name="codigo_postal" type="number" maxlength="4" placeholder="maximo 4 numeros">	
+				<input id="id_CPA" name="CPA" type="text" maxlength="8" pattern="[A-Z][0-9]{4}[A-Z]{3}" placeholder="ejemplo: U9000XAE" tittle="">
+				<!--pattern se le esta diciendo 1 de [A-Z] 4 de [0-9] y 3 de [A-Z], si no se cumple muestra titulo de ejemplo-->
+			</span>			
+			</fieldset>
+			
+			
+			<fieldset name="datos_contacto">
+			<span class="par_label_input">
+				<label for ="numero_telefono">numero telefono:</label>
+				<input id="id_numero_telefono" name="numero_telefono" type="number" minlength="10" maxlength="10" placeholder="sin - ni 0" tittle="ejemplo: 2971234567">					
+				<!--pattern se le esta diciendo 1 de [A-Z] 4 de [0-9] y 3 de [A-Z], si no se cumple muestra titulo de ejemplo-->
+			</span>
+			
+			<span class="par_label_input">
+				<label for ="email_ingresado">Email:</label>
+				<input id="id_email_ingresado"name="email_ingresado" type="email" maxlength="30" placeholder="maximo 30 caracteres">							
+			</span>
+			
+			<span class="par_label_input">
+				<label for ="confirmar_email_ingresado">confirmar Email:</label>
+				<input id="id_confirmar_email_ingresado"name="confirmar_email_ingresado" type="email" maxlength="30" placeholder="maximo 30 caracteres" autocomplete="on">						
+			</span>
+			</fieldset>
+			
+			<fieldset name="botones">
+				<input id="id_submit" name="boton_submit" type="submit" tittle="Enviar" name="enviar" value="enviado">
+				<input id="id_reset" name="boton_reset" type="reset" tittle="Borrar" name="borrar" value="borrado">
+			</fieldset>
+			
+			
+			
+		</form>
+		</article>
+	</section>
+	<footer>
+	<div id="descripcion_pagina">
+		<p>autor: <span class="autor">Santiago Servin</span></p>
+		<p>Trabajo Pr&aacute;ctico <span class="tp_ejer">2</span> , ejercicio <span class="tp_ejer">8</span>.</p>		
+	</div>
+	</footer>
+	
+</body>
+
+<html>
