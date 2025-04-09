@@ -3,27 +3,17 @@ body {
 	font-family: Verdana, Arial, Helvetica;
 	color: #990000;	
 }
-th, td{
-	border: 1px solid black;
-	
-}
+
 table{
-	display:flex;
-	
-	
+	text-align: center;
+	width:80%;
+	margin: 0px auto;
 }
 
-#caracteristicas, #imagenes{
-	display:flex;
-	flex-direction:column;
+th, td{
+	border: 1px solid black;		
 }
 
-#caracteristicas td, #imagenes td{
-	
-}
-
-}
-#imagenes{
-	height:5px;
-	width: auto;
+img{
+	height: 300px;
 }
