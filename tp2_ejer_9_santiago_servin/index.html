@@ -34,8 +34,8 @@
 				<span class="par_label_input">
 					<label class="label_principal" for="id_disponibilidad">disponibilidad</label>
 					<ul id= "id_disponibilidad">
-						<li><label>museo / acceso publico</label><input id="id_radio_acceso_publico" name="museo/acceso_publico" type="radio" value="1"></li>
-						<li><label>coleccion privada</label><input id="id_radio_coleccion_privada" name="coleccion_privada" type="radio" value="2"></li>						
+						<li><label>museo / acceso publico</label><input id="id_radio_acceso_publico" name="disponibilidad" type="radio" value="1"></li>
+						<li><label>coleccion privada</label><input id="id_radio_coleccion_privada" name="disponibilidad" type="radio" value="2"></li>						
 					</ul>				
 				</span>
 				
@@ -44,9 +44,10 @@
 				<!--para que sea seleccion multiple se debe colocar valores distintos en las opciones y colocar el atributo (multiple) en el select? (si, y hay que colocar corchetes 
 				en el nombre del select name="nombre_select[]")-->				
 				<select id="id_selector_estilos" size="1">
-					<option value="clasico">clasico</option>
-					<option value="contemporaneo">contemporaneo</option>
-					<option value="realismo">realismo</option>
+					<option value="novalor" select>sin estilo</option>
+					<option value="cla">clasico</option>
+					<option value="con">contemporaneo</option>
+					<option value="real">realismo</option>
 				</select>				
 				</span>
 								
