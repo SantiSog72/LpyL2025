@@ -1,7 +1,40 @@
 body {
-	background-color: #F0F0F0;
 	font-family: Verdana, Arial, Helvetica;
+	background-color: #F0F0F0;
 	color: #990000;
+}
+
+
+.texto_negrita{
+	font-weight:bold;
+}
+li, .clase_contenido{
+	display:flex;
+	
+	justify-content: center;
+}
+li{
+	flex-direction: column;
+	margin:  3rem 0px 0px 0px;
+}
+.clase_contenido{
+	flex-direction: row;
+	align-items: center;
+	
+}
+.clase_contenido *{
+	margin: 0px 0.5rem;
+		
+}
+h1{
+	font-size: 4rem:	
+}
+h2{
+		font-size: 2rem:	
+}
+img{
+	height: 130px;
+	width: auto;
 }
 
 footer {
@@ -21,3 +54,4 @@ footer {
 .tp_ejer{
 	font-weight:bold;
 }
+
