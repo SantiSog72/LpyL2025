@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="autor" content="Santiago Servin">
+<meta name="description" content="Ejercicio de Trabajo Practico">
+<link rel="stylesheet" href="css/index.css">
+<title>Busqueda fotos</title>
+</head>
+
+<body>
+	<header>
+	<h1></h1>
+	</header>
+	<section>
+		<article>
+		<form id="formulario_busqueda" method="get" action="busqueda.php">
+		<fieldset id="datos_autor">
+		<legend>datos del autor</legend>
+			<span class="par_label_input">
+				<label for="id_autor">autor fotografia:</label>
+				<input id="id_autor" name="autor_fotografia" type="text" maxlength="25">
+			</span>
+			<span class="par_label_input">
+				<label for="id_correo_autor">correo electronico autor:</label>
+				<input id="id_correo_autor" name="autor_correo" type="email" maxlength="25" plceholder="correoejemplo@mail.com">
+			</span>
+		
+		</fieldset>
+		<fieldset id="datos_fotografia">
+		<legend>datos de la fotografia</legend>
+			<span =class"par_label_input">
+				<label for="id_fecha_foto">fecha en la que fue tomada:</label>
+				<input id="id_fecha_foto" name="fecha fotogrfia" type="date" min="2010-01-01" max="2015-12-31" value="0">
+			</span>
+		
+		
+			<span class="par_label_input">
+				<label>pais donde fue tomada</label>
+				<select multiple size="3">
+					<option value="nc" selected>no contesta</option>
+					<option value="arg">argentina</option>
+					<option value="uru">uruguay</option>
+					<option value="chl">chile</option>
+					<option value="bra">brasil</option>
+					<option value="per">peru</option>
+				</select>				
+			</span>
+		</fieldset>	
+		
+		<fieldset id="output_fotografia">
+		<legend>visualizacion del resultado</legend>
+		<span class="par_label_input">
+			<label for="id_opciones_cantidad_fotos">cantidad de fotos</label>
+				<ul id="id_opciones_cantidad_fotos">
+					<li><label for="id_15_fotos">15</label><input id="id_15_fotos" name="cantidad_fotos" type="radio" value="15"></li>
+					<li><label for="id_30_fotos">30</label><input id="id_30_fotos" name="cantidad_fotos" type="radio" value="30"></li>
+					<li><label for="id_45_fotos">45</label><input id="id_45_fotos" name="cantidad_fotos" type="radio" value="45"></li>
+				</ul>
+		</span>
+		
+		<span class="par_label_input">
+		<label for="id_mod_visualizacoin">modo de visualizacon</label>
+			<select id="id_mod_visualizacoin">
+				<option name="lista" value= "1">lista</option>
+				<option name="cuadricula" value="1">cuadricula</option>
+			</select>
+		</span>
+		</fieldset>
+		</form>
+		</article>
+	</section>
+	<footer>
+	<div id="descripcion_pagina">
+		<p>autor: <span class="autor">Santiago Servin</span></p>
+		<p>Trabajo Pr&aacute;ctico <span class="tp_ejer">2</span> , ejercicio <span class="tp_ejer">10</span>.</p>		
+	</div>
+	</footer>
+	
+</body>
+
+<html>

@@ -1,0 +1,44 @@
+body {
+	background-color: #F0F0F0;
+	font-family: Verdana, Arial, Helvetica;
+	color: #990000;
+}
+
+form, fieldset, .par_label_input{
+	display:flex;	
+}
+
+
+
+form, fieldset{
+	flex-direction: column;
+	align-items: center;
+	width: 70%;
+	margin: 0px auto;	
+}
+
+.par_label_input{
+	margin: 1rem 0px 0px 0px;
+}
+label{
+	margin: 0px 1rem 0px 0px ;
+}
+
+
+footer {
+	text-align: center;
+	padding: 20px;
+}
+
+#descripcion_pagina {
+	font-style: italic;
+	font-size: 14px;
+	color: #333;
+}
+.autor{
+	font-size: 1.3em;
+	text-transform: capitalize;
+}
+.tp_ejer{
+	font-weight:bold;
+}
