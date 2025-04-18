@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="autor" content="Santiago Servin">
+<meta name="description" content="Ejercicio de Trabajo Practico">
+<link rel="stylesheet" href="css/index.css">
+<title>primer script con Javascript</title>
+</head>
+
+<body onload="imprime_cuerpo();">
+	<script type="text/javascript">
+		function imprime_cuerpo (){
+			document.write("<header>");
+			document.write("<h1>primera funcion en javascript</h1>");
+			document.write("</header>");
+			document.write("<section>");
+			document.write("<article>")
+			document.write("<p>este el es texto del articulo</p>")
+			document.write("</article>")
+			document.write("</section>");							
+		}
+		
+	</script>	
+	
+	<!--el document write al cargarse elimina todo el contenido del restante de la pagina por eso no se ve el footer-->
+		
+	<footer>
+		<div id="descripcion_pagina">
+			<p>autor: <span class="autor">Santiago Servin</span></p>
+			<p>Trabajo Pr&aacute;ctico <span class="tutorial_ejemp">Tutorial</span>, ejemplo<span class="tutorial_ejemp">3</span>.</p>
+		</div>
+	</footer>
+</body>
+
+</html>
